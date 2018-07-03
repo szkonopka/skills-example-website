@@ -18,17 +18,17 @@ module.exports = {
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: ['env']
+						presets: [ 'env' ]
 					}
 				}
 			},
 			{
 				test: /\.css$/,
-				use: ['style-loader', 'css-loader']
+				use: [ 'style-loader', 'css-loader' ]
 			},
 			{
 				test: /\.sass|scss$/,
-				use: ['style-loader', 'css-loader', 'sass-loader']
+				use: [ 'style-loader', 'css-loader', 'sass-loader' ]
 			}
 		]
 	}
