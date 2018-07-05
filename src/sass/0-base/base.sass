@@ -6,7 +6,20 @@ body
 	background: $foreground
 	padding: 0
 	margin: 0
-	font-family: 'Raleway', sans-serif
+	font-family: 'PT Serif', serif
 	overflow-x: hidden
 	letter-spacing: 0.06425em
-	color: white
+	color: $mainfont
+
+ul, ol
+	list-style-type: none
+	list-style: none
+
+h1, h2, h3, h4, h5, p
+	color: $mainfont
+	line-height: 2.4em
+
+a
+	&, &:active, &:hover, &:focus
+		text-decoration: none
+		color: $mainfont

@@ -1,0 +1,29 @@
+.main-menu
+	height: 0%
+	visibility: hidden
+	transition: all .2s ease
+
+.main-menu_active
+	height: 100%
+	visibility: visible
+	transition: all .2s ease
+
+.header__hamburger
+	span
+		&:before
+			top: -5px
+		&:after
+			top: 5px
+
+.header__hamburger_active
+	span
+		width: 0
+		&, &:after, &:before
+			z-index: 1002
+			background: white
+		&:after
+			transform: rotate(45deg)
+			top: 50%
+		&:before
+			transform: rotate(-45deg)
+			top: 50%
