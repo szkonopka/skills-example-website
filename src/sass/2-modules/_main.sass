@@ -1,35 +1,75 @@
+#main
+	padding-bottom: 0
+
 .main__heading
 	max-width: 1200px
 	text-align: left
 	margin-left: auto
 	margin-right: auto
 	h1
-		font-size: 1.5em
-		font-weight: 300
+		font-size: 2.8em
+		font-weight: 400
+		cursor: pointer
+		background: $foreground
+		i
+			font-weight: 600
+
+.main__heading_introduction
+	h1
+		font-weight: 400
+		font-size: 1.4em
+		text-align: center
 
 .main__heading_additional
 	p
-		font-weight: 300
+		font-weight: 400
 		font-size: 1.2em
 		color: $mainfont
-		text-align: center
+		background: $foreground
 
 .main__heading_list
-	border-bottom: 1px solid $secondfont
+	position: relative
 	padding: 0
+	ul
+		padding: 0
 	li
-		padding-right: 2em
+		padding-right: 3em
 
-.main__h,
-	h1,
+.headers__loader
+	position: absolute
+	bottom: 0
+	width: 100%
+	left: 0
+	background: $mainfont
+	height: 1px
+
+.headers__loader_progress
+	position: absolute
+	left: 0
+	top: 0
+	height: 1px
+	width: 30%
+	background: $marked
+
+.main__h
+	h1
 		color: $secondfont
+		margin: 0
 
 .main__h_active,
-	h1,
+	h1
 		color: $mainfont
 
 .headers__item
-	color: $secondfont !important
+	color: $mainfont !important
+	transition: all .3s ease
 
 .headers__item_active
-	color: $mainfont !important
+	color: $marked !important
+	transition: all .3s ease
+
+.descriptions_hidden
+	height: 0
+
+.descriptions_visible
+	height: 100%

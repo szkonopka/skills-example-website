@@ -8,9 +8,8 @@
 		<div class="main-menu">
 			<ul class="main-menu__opts">
 				<li class="main-menu__opt"><a href="#about" data-title="About">About</a></li>
-				<li class="main-menu__opt"><a href="#works" data-title="Work">Work</a></li>
+				<li class="main-menu__opt"><a href="#works" data-title="Work">Reservation</a></li>
 				<li class="main-menu__opt"><a href="#skills" data-title="Contact">Contact</a></li>
-				<li class="inactive"><a href="" data-title="Blog">Blog <span class="label">soon</span></a></li>
 			</ul>
 			<ul class="main-menu__links">
 				<li><a href=""><i class="fa fa-github"></i></a></li>
@@ -23,133 +22,104 @@
 					Credits by Szymon Konopka
 				</div>
 			</div>
+
 		</div>
 		<div class="wrapper">
+			<div class="row net-background">
+				<div class="col net-background__line">
+					<img class="icon" id="icon-1" src="./img/x.svg" alt="">
+					<img class="icon" id="icon-4" src="./img/triangle.svg" alt="">
+					<img class="icon" id="icon-7" src="./img/circle.svg" alt="">
+					<img class="icon" id="icon-10" src="./img/q.svg" alt="">
+				</div>
+				<div class="col net-background__line">
+					<img class="icon" id="icon-2" src="./img/triangle.svg" alt="">
+					<img class="icon" id="icon-5" src="./img/x.svg" alt="">
+					<img class="icon" id="icon-8" src="./img/q.svg" alt="">
+				</div>
+				<div class="col net-background__line">
+					<img class="icon" id="icon-3" src="./img/circle.svg" alt="">
+					<img class="icon" id="icon-6" src="./img/triangle.svg" alt="">
+					<img class="icon" id="icon-9" src="./img/x.svg" alt="">
+				</div>
+				<div class="col net-background__line">
+				</div>
+			</div>
 			<nav id="header">
 				<!--<div class="header__logo">
 					<a href="">sk</a>
 					<p><strong>Szymon Konopka</strong></p>
 				</div>-->
 				<div class="header__menu-label">
-					MENU
+
 				</div>
 				<div class="header__hamburger">
 					<span></span>
 				</div>
 			</nav>
 			<section id="main" class="container">
-				<ul class="row main__heading main__heading_list" id="headers">
-					<li class="main__h"><h1 class="headers__item">Zdrowie <i>test</i></h1></li>
-					<li class="main__h"><h1 class="headers__item">Witalność</h1></li>
-					<li class="main__h"><h1 class="headers__item"></h1></li>
-				</ul>
-				<div class="row main__heading main__heading_additional" id="descriptions"><p>Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur.</p></div>
-				<div class="row">
-					<div class="btn btn_center btn_round">Check out our offer</div>
-				</div>
-			</section>
-			<section id="about" class="container">
-				<div class="col">
-					<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa dolor, scelerisque in ullamcorper condimentum, dictum in orci. Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. </h1>
-				</div>
-				<div class="col">
-					<ul class="about__list">
-						<li>
-							<img src="./img/check.svg" alt="">
-							<h3>Build with love</h3>
-							<p>I focuse on writing clean, elegant and effficient code. I try to put hearth in every project, which I am involved. Most important things in every project are details.</p>
-						</li>
-						<li>
-							<img src="./img/design-skills.svg" alt="">
-							<h3>Well prepared</h3>
-							<p>During my three years of studies I was involved in many activities, where I was mainly responsible for developing websites and coordinating smaller, technical works. Some of my projects are available to look on my personal github.</p>
-						</li>
-						<li>
-							<img src="./img/programmer.svg" alt="">
-							<h3>Reaching for the stars</h3>
-							<p>Moreover I am intered into frontend and backend technologies. </p>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section id="works" class="container">
-				<h2>Some of my works</h2>
-				<div id="works__counter"></div>
-				<div id="slider">
-					<div class="slides">
-						<div id="right"></div>
-						<div id="left"></div>
-						<div class="slide works__container">
-							<div class="col col_centered">
-								<h3>BEST Wrocław</h3>
-								<p>Fun side project. I design simple website for course organised by I was also responsible for migration website from Wordpress to Jekyll generator.</p>
-								<div class="works__btn">View project</div>
+				<div class="content-container">
+					<div class="main__heading main__heading_introduction">
+					</div>
+					<div  class="row main__heading main__heading_list">
+						<ul id="headers">
+							<div class="headers__loader">
+								<div class="headers__loader_progress"></div>
 							</div>
-							<div class="col">
-
-							</div>
-						</div>
-						<div class="slide works__container">
-							<div class="col col_centered">
-								<h3>Autumn Course 18</h3>
-								<p>Fun side project. I designed simple website for course organised by student organisation.</p>
-								<div class="works__btn">View project</div>
-							</div>
-							<div class="col">
-
-							</div>
-						</div>
-						<div class="slide works__container">
-							<div class="col col_centered">
-								<h3>Task manager</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit aliquet eros, placerat porta ex gravida ac. Nunc pulvinar, erat at porttitor aliquam, metus erat pulvinar ligula, interdum pretium metus eros vitae nibh. Nam elementum bibendum leo sit amet suscipit. Duis quis dictum turpis.</p>
-								<div class="works__btn">View project</div>
-							</div>
-							<div class="col">
-
-							</div>
-						</div>
+							<li class="main__h"><h1 class="headers__item">Zdrowie <i>test</i></h1></li>
+							<li class="main__h"><h1 class="headers__item">Witalność</h1></li>
+							<li class="main__h"><h1 class="headers__item"></h1></li>
+						</ul>
+					</div>
+					<div class="row main__heading main__heading_additional" id="descriptions"><p>Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur.</p></div>
+					<div class="row">
+						<div class="btn btn_center btn_round">Make a reservation</div>
 					</div>
 				</div>
 			</section>
-			<section id="skills">
-				<div class="skills__tools">
-					<h2>How do i work?</h2>
-					<dl>
-						<dt><h3>Front-end</h3></dt>
-						<dd>Javascript (with ES6) and TypeScript</dd>
-						<dd>jQuery</dd>
-						<dd>Three.js</dd>
-						<dd>Angular 5</dd>
-						<dd>CSS3 with Sass/Scss and Bootstrap and RWD</dd>
-						<dd>HTML5</dd>
-					</dl>
-					<dl>
-						<dt><h3>Back-end</h3></dt>
-						<dd>C# (.NET) with .NET Core, ASP.NET and LINQ</dd>
-						<dd>Python with ML libraries (Scikit-learn, numpy)</dd>
-						<dd>C/C++</dd>
-						<dd>SQL (MSSQL)</dd>
-					</dl>
-					<dl>
-						<dt><h3>Others</h3></dt>
-						<dd>Photoshop</dd>
-						<dd>Linux</dd>
-						<dd>Wordpress</dd>
-						<dd>Jekyll</dd>
-						<dd>Git</dd>
-						<dd>Web design</dd>
-					</dl>
+			<section id="about" class="container">
+				<div class="content-container">
+				<div class="row row_separated">
+					<div class="col col_50">
+						<div class="photo_floating photo_floating-20tp">
+							<img src="./img/vr-1.png" class="photo_round photo_right" alt="">
+						</div>
+					</div>
+					<div class="col col_50">
+						<div class="about__text">
+							<h1>Graj ze znajomymi</h1>
+							<p>
+							Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur. Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur. Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur.
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="col">
-					<h2>My experience</h2>
-					<h3>My experience includes my own, personal projects, which were created during my studies and my activeness in an international student organisation, which I belong to.</h3>
-					<p>In this role I used to build and maintance complex websites, implement new technology tools to improve a work performance in the group and create promotional graphics. I gained an opportunity to learn about advanced database aspects and back-end technologies, which is a great addition to my developer skills.</p>
+				<div class="row row_separated">
+					<div class="col col_50">
+						<div class="about__text">
+							<h1>Graj ze znajomymi</h1>
+							<p>
+								Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur. Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur. Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur.
+							</p>
+						</div>
+						<div class="about__text about__text_separated">
+							<h1>Graj ze znajomymi</h1>
+							<p>
+							Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur. Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur. Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur.
+							</p>
+						</div>
+					</div>
+					<div class="col col_50">
+						<div class="photo_floating photo_floating-20tp">
+							<img src="./img/vr-1.png" class="photo_round photo_left" alt="">
+						</div>
+					</div>
+				</div>
 				</div>
 			</section>
-			<div class="divider">
-				<p>Have you question or want to work together? Just let me know by sending an e-mail on <a href="mailto:szykonopka@gmail.com">szykonopka@gmail.com</a></p>
-			</div>
+			<section id="works" class="container">
+
+			</section>
 			<footer>
 				<p>Copyright Szymon Konopka &copy; 2018</p>
 				<ul>

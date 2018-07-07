@@ -1,18 +1,84 @@
 strong
-	background: $redforeground
-	color: white
+	color: $marked
+	font-weight: 400
 
 .btn
 	padding: 1em 2em
-	background: $redforeground
+	background: $marked
 	text-align: center
 	color: white
 	display: inline-block
 	cursor: pointer
+	font-weight: 700
 
 .btn_round
 	border-radius: 50px
 
+.btn_stable_50pt
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
 .btn_center
 	margin-left: auto
 	margin-right: auto
+
+.net-background
+	position: absolute
+	width: 100%
+	height: 100%
+	z-index: -1
+
+.net-background__line
+	position: relative
+	height: 100%
+	border-right: 1px solid #ececec
+
+.photo_floating
+	position: sticky
+	img
+		width: 120%
+
+.photo_right
+	transform: translate(-20%, 0)
+
+.photo_left
+	transform: translate(20%, 0)
+
+.photo_round
+	border-radius: 5px
+
+.photo_floating-20tp
+	top: 10%
+
+.icon
+	width: 20px
+	right: -10px
+	position: absolute
+	opacity: 1
+	background: white
+	z-index: 0
+
+#icon-1
+	top: 10%
+#icon-4
+	top: 18%
+#icon-7
+	top: 27%
+#icon-10
+	top: 37%
+
+#icon-2
+	top: 5%
+#icon-5
+	top: 20%
+#icon-8
+	top: 31%
+
+#icon-3
+	top: 15%
+#icon-6
+	top: 24%
+#icon-9
+	top: 32%
