@@ -111,19 +111,57 @@ strong
 .floating-box
 	text-align: center
 	background: white
+	border: 2px solid $fourthfont
+	background: white
 	margin-left: 16px
 	margin-right: 16px
-	border: 2px solid $marked
+
+.floating-box_round
+	border-radius: 5px
 
 .floating-box__header
-	background: $marked
+	background: $fourthfont
 	padding-top: 12px
 	padding-bottom: 12px
 	h2
-		color: $foreground
-		font-size: 1.8em
+		font-size: 1em
+		display: inline-block
+
+.floating-box__content
+	.btn
+		transform: translateY(50%)
 
 .floating-box__content
 	padding: 16px
+	padding-bottom: 0
 	h3
 		margin: 0
+		font-size: 1.6em
+
+.marked-element
+	color: $marked
+
+.section-header
+	h1
+		font-size: 3em
+
+.form-group
+	margin-right: 1em
+	padding: 1em
+	label
+		color: $marked
+
+.form__input
+	border: none
+	padding-top: 12px
+	padding-bottom: 12px
+	width: 100%
+	color: $marked
+
+.form__input_on-footer
+	background: transparent
+	border-bottom: 2px solid $foreground
+	&:active, &:focus
+		border: 0
+		outline: 0
+		border-bottom: 2px solid $marked

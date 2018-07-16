@@ -1,0 +1,12 @@
+class GridIconInitializer
+{
+	constructor()
+	{
+
+	}
+
+	init()
+	{
+		
+	}
+}

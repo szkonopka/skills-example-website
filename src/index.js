@@ -2,9 +2,9 @@ import * as animLib from './animations.js';
 import { TextSlider } from './textSlider.js'
 
 const headers = [
-	"<i>30</i> stanowisk VR'owych",
-	"W pełni wyposażony <i>bar</i>",
-	"Strefa gier <i>konsolowych</i>"
+	"<i>30 stanowisk</i> VR'owych",
+	"<i>W pełni</i> wyposażony bar",
+	"<i>Strefa gier</i> konsolowych"
 ]
 
 const descriptions = [
@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	headerHamburger.addEventListener("click", () => {
 		animLib.toggleMenu();
 	});
+
+
 
 	const textSlider = new TextSlider(headers, descriptions);
 	textSlider.init();

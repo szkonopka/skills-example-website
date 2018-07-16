@@ -58,7 +58,7 @@
 			</div>
 			<nav id="header">
 				<div class="header__logo">
-					<img src="./img/vr-logo.svg" height="30px" alt="">
+					<a href="./index.html"><img src="./img/vr-logo.svg" height="50px" alt=""></a>
 				</div>
 				<div class="header__menu-label">
 
@@ -76,8 +76,8 @@
 							<div class="headers__loader">
 								<div class="headers__loader_progress"></div>
 							</div>
-							<li class="main__h"><h1 class="headers__item">Zdrowie <i>test</i></h1></li>
-							<li class="main__h"><h1 class="headers__item">Witalność</h1></li>
+							<li class="main__h"><h1 class="headers__item"></h1></li>
+							<li class="main__h"><h1 class="headers__item"></h1></li>
 							<li class="main__h"><h1 class="headers__item"></h1></li>
 						</ul>
 					</div>
@@ -121,7 +121,7 @@
 					</div>
 					<div class="col col_50">
 						<div class="photo_floating photo_floating-20tp">
-							<img src="./img/vr-1.png" class="photo_round photo_left" alt="">
+							<img src="./img/vr-2.png" class="photo_round photo_left" alt="">
 						</div>
 					</div>
 				</div>
@@ -129,37 +129,41 @@
 			</section>
 			<section id="price" class="container">
 				<div class="content-container">
+					<div class="main__h section-header"><h1 class="headers__item">Cennik<span class="marked-element">_</span></h1></div>
 					<div class="row">
 						<div class="col">
-							<div class="floating-box">
+							<div class="floating-box floating-box_round">
 								<div class="floating-box__header">
 									<h2>Pojedyńczy</h2>
 								</div>
 								<div class="floating-box__content">
 									<p>Pakiet kierowany do wiadomo kogo</p>
 									<h3>99 PLN</h3>
+									<div class="btn btn_round btn_center">Zarezerwuj</div>
 								</div>
 							</div>
 						</div>
 						<div class="col">
-							<div class="floating-box">
+							<div class="floating-box floating-box_round">
 								<div class="floating-box__header">
 									<h2>Grupowy</h2>
 								</div>
 								<div class="floating-box__content">
 									<p>Pakiet kierowany do wiadomo kogo</p>
 									<h3>99 PLN</h3>
+									<div class="btn btn_round btn_center">Zarezerwuj</div>
 								</div>
 							</div>
 						</div>
 						<div class="col">
-							<div class="floating-box">
+							<div class="floating-box floating-box_round">
 								<div class="floating-box__header">
 									<h2>VIP</h2>
 								</div>
 								<div class="floating-box__content">
 									<p>Pakiet kierowany do wiadomo kogo</p>
 									<h3>99 PLN</h3>
+									<div class="btn btn_round btn_center">Zarezerwuj</div>
 								</div>
 							</div>
 						</div>
@@ -167,13 +171,43 @@
 				</div>
 			</section>
 			<footer>
-				<p>Copyright Szymon Konopka &copy; 2018</p>
-				<ul>
-					<li><a href="">Resume</a></li>
-					<li><a href="">Dribbble</a></li>
-					<li><a href="">Linkedin</a></li>
-					<li><a href="">Github</a></li>
-				</ul>
+				<div class="content-container">
+				<div class="footer__header">
+					<a href=""><img src="./img/vr-logo-w.svg" height="50px" alt=""></a>
+				</div>
+				<div class="footer__contact row">
+					<div class="col contact-form">
+						<h1>Contact us</h1>
+						<form class="" action="index.html" method="post">
+							<div class="row">
+							<div class="form-group col">
+								<label for="name">Name</label>
+								<input type="text" name="name" class="form__input form__input_on-footer">
+							</div>
+							<div class="form-group col">
+								<label for="email">E-mail</label>
+								<input type="text" name="email" class="form__input form__input_on-footer">
+							</div>
+							</div>
+							<div class="form-group">
+								<label for="content">Content</label>
+								<textarea name="content" rows="10" cols="80" class="form__input form__input_on-footer"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="col contact-info">
+						<h1>Adres</h1>
+						<p>XX-XXX Wrocław</p>
+						<p>ul. Papiesza 2137</p>
+						<h2>Godziny otwarcia</h2>
+						<p>Poniedziałek - Piątek: <i>12:00 - 24:00</i></p>
+						<p>Sobota - Niedziela: <i>14:00 - 2:00</i></p>
+					</div>
+				</div>
+				<div class="row footer__credentials">
+					<p>Copyright Szymon Konopka &copy; 2018</p>
+				</div>
+				</div>
 			</footer>
 		</div>
 	</body>
