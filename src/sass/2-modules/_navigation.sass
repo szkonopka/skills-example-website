@@ -5,7 +5,7 @@
 	top: -100%
 	top: 0
 	left: 0
-	background: $foreground
+	background: $mainfont
 
 .main-menu__opts
 	position: relative
@@ -17,7 +17,7 @@
 		padding: 2em 0
 		z-index: 999
 		a
-			font-weight: 900
+			font-weight: 200
 			font-size: 4em
 			position: relative
 			color: $marked
@@ -33,11 +33,12 @@
 					content: attr(data-title)
 					z-index: 0
 					left: 50%
+					top: 50%
 					transform: translate(-50%, 0)
 
 #header
 	position: absolute
-	width: 100%
+	width: calc(100% - 60px)
 
 .header__logo
 	margin: 40px
@@ -80,7 +81,6 @@
 		font-weight: 700
 		padding: 12px
 		text-decoration: none
-		background: $foreground
 		height: 50px
 		line-height: 25px
 		&:before
