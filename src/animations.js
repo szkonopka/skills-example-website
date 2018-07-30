@@ -23,5 +23,13 @@ export function toggleMenu()
 	return true;
 }
 
+export function showGames()
+{
+	const windowPopUp = getWindowPopUp();
+	windowPopUp.classList.toggle('library_active');
+}
+
 export function getHeaderHamburgerDOMElem() { return document.querySelector('.header__hamburger') };
 export function getMenuDOMElem() { return document.querySelector('.main-menu') };
+export function getMoreGamesBtnDOMElem() { return document.querySelector('#more-games') };
+function getWindowPopUp() { return document.querySelector('.library') };

@@ -2,7 +2,6 @@
 	position: relative
 	min-height: 100vh
 	height: auto
-	overflow: hidden
 
 .container_flex
 	display: flex
@@ -10,7 +9,12 @@
 	flex-flow: column
 
 .content-container
-	max-width: 80%
 	position: relative
 	margin-left: auto
 	margin-right: auto
+	max-width: 100%
+	padding-left: 40px
+	padding-right: 40px
+	+md
+		max-width: 80%
+		padding: 0

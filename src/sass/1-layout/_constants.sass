@@ -10,12 +10,12 @@ strong
 	display: inline-block
 	cursor: pointer
 	font-weight: 700
-	-webkit-box-shadow: 0px 0px 7px -1px rgba(0,235,127,1)
-	-moz-box-shadow: 0px 0px 7px -1px rgba(0,235,127,1)
-	box-shadow: 0px 0px 7px -1px rgba(0,235,127,1)
+	-webkit-box-shadow: 0px 0px 30px -5px rgba(0,235,127,1)
+	-moz-box-shadow: 0px 0px 30px -5px rgba(0,235,127,1)
+	box-shadow: 0px 0px 30px -5px rgba(0,235,127,1)
 
 .btn_round
-	border-radius: 50px
+	border-radius: 5em
 
 .btn_stable_50pt
 	position: absolute
@@ -30,7 +30,7 @@ strong
 .net-background
 	position: absolute
 	width: calc(100% - 60px)
-	height: 100%
+	height: calc(100% - 30px)
 	z-index: -1
 
 .net-background__line
@@ -42,21 +42,24 @@ strong
 	border-left: 1px solid #ececec
 
 .photo_floating
+	position: -webkit-sticky
 	position: sticky
 	img
-		width: 100%
+		width: 80%
 
 .photo_right
-	transform: translate(-20%, 0)
+	transform: none
+	text-align: right
 
 .photo_left
-	transform: translate(20%, 0)
+	transform: none
+	text-align: left
 
 .photo_round
 	border-radius: 5px
 
 .photo_floating-20tp
-	top: 10%
+	top: 20px
 
 .icon
 	width: 20px
@@ -184,6 +187,7 @@ strong
 .form-group
 	margin-right: 1em
 	padding: 1em
+	padding-left: 0
 	label
 		color: $marked
 

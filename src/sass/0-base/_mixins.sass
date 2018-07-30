@@ -1,0 +1,11 @@
+// breakpoints
+$small-brk: 768px
+$medium-brk: 992px
+
+=sm
+	@media screen and (max-width: $small-brk)
+		@content
+
+=md
+	@media screen and (min-width: $medium-brk)
+		@content

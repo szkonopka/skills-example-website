@@ -1,5 +1,6 @@
 #main
 	padding-bottom: 0
+	margin-bottom: 72px
 
 .main__heading
 	max-width: 1200px
@@ -7,30 +8,41 @@
 	margin-left: auto
 	margin-right: auto
 	h1
-		font-size: 2.8em
+		font-size: 4em
 		font-weight: 400
 		cursor: pointer
+		text-align: center
+		+md
+			font-size: 2.8em
+			text-align: left
 		i
 			font-weight: 600
 
 .main__heading_introduction
 	h1
 		font-weight: 400
-		font-size: 1.4em
+		font-size: 2.4em
 		text-align: center
 
 .main__heading_additional
 	p
 		font-weight: 400
-		font-size: 1.2em
+		font-size: 1.4em
 		color: $mainfont
 		background: $foreground
+		text-align: center
+		+md
+			text-align: left
+			font-size: 1.2em
 
 .main__heading_list
 	position: relative
 	padding: 0
 	ul
 		padding: 0
+		width: 100%
+		+md
+			width: auto
 	li
 		padding-right: 3em
 
@@ -62,6 +74,7 @@
 .headers__item
 	color: $mainfont !important
 	transition: all .3s ease
+	font-weight: 400
 
 .headers__item_active
 	color: $marked !important
