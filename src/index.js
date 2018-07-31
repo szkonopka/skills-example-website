@@ -2,9 +2,9 @@ import * as animLib from './animations.js';
 import { TextSlider } from './textSlider.js'
 
 const headers = [
-	"<i>30 stanowisk</i> VR'owych",
-	"<i>W pełni</i> wyposażony bar",
-	"<i>Strefa gier</i> konsolowych"
+	"<i>The biggest</i> VR arcade in Wrocław",
+	"<i>About 100+</i> VR stands",
+	"<i>Console gaming</i> zone"
 ]
 
 const descriptions = [
@@ -26,6 +26,8 @@ const popUpWindow = `
 document.addEventListener("DOMContentLoaded", () => {
 	const headerHamburger = animLib.getHeaderHamburgerDOMElem();
 
+	loadBookmarkContent(0);
+
 	headerHamburger.addEventListener("click", () => {
 		animLib.toggleMenu();
 	});
@@ -36,6 +38,43 @@ document.addEventListener("DOMContentLoaded", () => {
 		animLib.showGames();
 	});
 
+	const bookmarks = animLib.getBookmarksDOMElems();
+
+	for(let i = 0; i < bookmarks.length; i++)
+	{
+			bookmarks[i].addEventListener("click", () => {
+				animLib.deactiveAllBookmarks(bookmarks);
+				animLib.activeBookmark(bookmarks, i);
+				loadBookmarkContent(i)
+			});
+	}
+
 	const textSlider = new TextSlider(headers, descriptions);
 	textSlider.init();
 })
+
+function loadBookmarkContent(index)
+{
+	let fetchedUrl = "http://localhost:3000/";
+
+	switch(index)
+	{
+		case 1:
+			fetchedUrl = fetchedUrl + "apps.html";
+			break;
+		case 2:
+			fetchedUrl = fetchedUrl + "movies.html";
+			break;
+		default:
+			fetchedUrl = fetchedUrl + "games.html";
+			break;
+	}
+
+	fetch(fetchedUrl)
+	.then(response => {
+		return response.text()
+	})
+	.then(html => {
+		document.querySelector('.examples_library').innerHTML = html;
+	});
+}

@@ -1,6 +1,6 @@
 strong
-	color: $marked
-	font-weight: 400
+
+	font-weight: 700
 
 .btn
 	padding: 1em 2em
@@ -47,13 +47,21 @@ strong
 	img
 		width: 80%
 
+.photo_left, .photo_right
+	text-align: center
+	margin-bottom: 2em
+
 .photo_right
 	transform: none
-	text-align: right
+	+md
+		text-align: right
+		margin: 0
 
 .photo_left
 	transform: none
-	text-align: left
+	+md
+		text-align: left
+		margin: 0
 
 .photo_round
 	border-radius: 5px

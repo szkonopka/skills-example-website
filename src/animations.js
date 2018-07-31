@@ -25,11 +25,34 @@ export function toggleMenu()
 
 export function showGames()
 {
-	const windowPopUp = getWindowPopUp();
-	windowPopUp.classList.toggle('library_active');
+	const windowPopUp = getWindowPopUpDOMElem();
+	const library = getLibraryDOMElem();
+	windowPopUp.classList.toggle('window-pop-up_active');
+	library.classList.toggle('library_active');
+
 }
 
 export function getHeaderHamburgerDOMElem() { return document.querySelector('.header__hamburger') };
 export function getMenuDOMElem() { return document.querySelector('.main-menu') };
 export function getMoreGamesBtnDOMElem() { return document.querySelector('#more-games') };
-function getWindowPopUp() { return document.querySelector('.library') };
+export function getBookmarksDOMElems() { return document.querySelectorAll('.library__bookmark') };
+
+function getWindowPopUpDOMElem() { return document.querySelector('.window-pop-up') };
+function getLibraryDOMElem() { return document.querySelector('.library') };
+
+export function activeBookmark(bookmarks, index)
+{
+	for(let i = 0; i < bookmarks.length; i++)
+	{
+		if(index === i)
+			bookmarks[i].classList.add('library__bookmark_active');
+	}
+}
+
+export function deactiveAllBookmarks(bookmarks)
+{
+	for(let bookmark of bookmarks)
+	{
+		bookmark.classList.remove('library__bookmark_active');
+	}
+}

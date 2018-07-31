@@ -14,7 +14,7 @@
 	width: 100%
 	height: 100%
 	position: absolute
-	background: $marked
+	background: $thirdfont
 	opacity: .6
 
 .window-pop-up
@@ -25,13 +25,37 @@
 	border-radius: 5px
 	top: 50%
 	left: 50%
-	transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%) scale(0.0)
+	overflow: hidden
+	transition: .1s all ease-in-out
+	ul
+		margin: 0
+	#examples
+		overflow-y: auto
+		height: calc(100% - 77px)
+		margin: 0
+		&::-webkit-scrollbar
+			border-radius: 25px
+			width: 6px
+			z-index: 999
+	  &::-webkit-scrollbar-track
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1)
+			border-radius: 25px
+		&::-webkit-scrollbar-thumb
+			background: $fourthfont
+			border-radius: 25px
+
+.window-pop-up_active
+	transform: translate(-50%, -50%) scale(1.0)
+	transition: .1s all ease-in-out
 
 .library__bookmarks
 	padding: 0
 	display: inline-block
 	border-bottom: 2px solid $fourthfont
 	width: 100%
+	padding-top: 12px
+	padding-bottom: 12px
 
 .library__bookmark
 	position: relative
@@ -45,7 +69,7 @@
 	&:before
 		content: ''
 		position: absolute
-		bottom: -2px
+		bottom: -14px
 		width: 100%
 		height: 2px
 		background: $marked

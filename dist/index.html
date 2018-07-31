@@ -9,44 +9,11 @@
 			<div class="window-pop-up__background"></div>
 			<div class="window-pop-up">
 				<ul class="library__bookmarks">
-					<li class="library__bookmark library__bookmark_active">Games</li>
-					<li class="library__bookmark">Apps</li>
-					<li class="library__bookmark">Movies</li>
+					<li class="library__bookmark library__bookmark_active">Games <strong>(59)</strong></li>
+					<li class="library__bookmark">Apps <strong>(32)</strong></li>
+					<li class="library__bookmark">Movies <strong>(12)</strong></li>
 				</ul>
-				<ul id="examples">
-					<div class="row">
-					<li class="col photo_round">
-						<div class="examples__info">
-							<p>Superhot</p>
-							<div class="photo__cover"></div>
-						</div>
-						<div class="img-bg" style="background-image: url('./img/superhot.jpg')"></div>
-					</li>
-					<li class="col photo_round">
-						<div class="examples__info">
-							<p>The Climb</p>
-							<div class="photo__cover"></div>
-						</div>
-						<div class="img-bg" style="background-image: url('./img/theclimb.png')"></div>
-					</li>
-					</div>
-					<div class="row">
-					<li class="col photo_round">
-						<div class="examples__info">
-							<p>Sprint Vector</p>
-							<div class="photo__cover"></div>
-						</div>
-						<div class="img-bg" style="background-image: url('./img/sprintvector.jpg')"></div>
-					</li>
-					<li class="col photo_round">
-						<div class="examples__info">
-							<p>Transference</p>
-							<div class="photo__cover"></div>
-						</div>
-						<div class="img-bg" style="background-image: url('./img/transference.jpg')"></div>
-					</li>
-					</div>
-				</ul>
+				<ul id="examples" class="examples_library"></ul>
 			</div>
 		</div>
 		<div class="main-menu">
@@ -158,7 +125,7 @@
 					</div>
 					<div class="col col_50">
 						<div class="about__text">
-							<h1>Graj ze znajomymi<span class="marked-element">_</span></h1>
+							<h1>Play with friends<span class="marked-element">_</span></h1>
 							<p>
 							Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur.
 							</p>
@@ -180,7 +147,7 @@
 				<div class="row row_separated">
 					<div class="col col_50">
 						<div class="about__text">
-							<h1>Idealny prezent<span class="marked-element">_</span></h1>
+							<h1>A perfect gift<span class="marked-element">_</span></h1>
 							<p>
 								Pellentesque at urna ut risus efficitur laoreet sit amet eu dolor. Proin sodales tincidunt libero ut vulputate. Cras in vulputate felis. Lorem ipsum dolor sit amet, consectetur.
 							</p>
@@ -234,6 +201,13 @@
 						</li>
 						<li class="col photo_round">
 							<div class="examples__info">
+								<p>Sprint Vector</p>
+								<div class="photo__cover"></div>
+							</div>
+							<div class="img-bg" style="background-image: url('./img/sprintvector.jpg')"></div>
+						</li>
+						<li class="col photo_round">
+							<div class="examples__info">
 								<p>The Climb</p>
 								<div class="photo__cover"></div>
 							</div>
@@ -255,6 +229,13 @@
 							</div>
 							<div class="img-bg" style="background-image: url('./img/transference.jpg')"></div>
 						</li>
+						<li class="col photo_round">
+							<div class="examples__info">
+								<p>Superhot</p>
+								<div class="photo__cover"></div>
+							</div>
+							<div class="img-bg" style="background-image: url('./img/superhot.jpg')"></div>
+						</li>
 						</div>
 					</ul>
 					<div class="row">
@@ -266,12 +247,12 @@
 			</section>
 			<section id="price" class="container container_flex">
 				<div class="content-container">
-					<div class="main__h section-header"><h1 class="headers__item">Cennik<span class="marked-element">_</span></h1></div>
+					<div class="main__h section-header"><h1 class="headers__item">Prices and booking<span class="marked-element">_</span></h1></div>
 					<div class="row" id="prices__list">
 						<div class="col price__pack">
 							<div class="floating-box floating-box_round">
 								<div class="floating-box__header">
-									<h2>Pojedyńczy</h2>
+									<h2>Group room</h2>
 								</div>
 								<div class="floating-box__content">
 									<p>Pakiet zawiera dostęp 30 minut grania</p>
@@ -283,7 +264,7 @@
 						<div class="col price__pack">
 							<div class="floating-box floating-box_round">
 								<div class="floating-box__header">
-									<h2>Grupowy</h2>
+									<h2>Singleplayer / Multiplayer</h2>
 								</div>
 								<div class="floating-box__content">
 									<p>Pakiet zawiera dostęp 60 minut grania</p>
@@ -299,6 +280,7 @@
 								</div>
 								<div class="floating-box__content">
 									<p>Pakiet zawiera dostęp 120 minut graniao</p>
+									<p>Pakiet zawiera dostęp 120 minut graniao</p>
 									<h3>49 $ USD</h3>
 									<div class="btn btn_round btn_center">Zarezerwuj</div>
 								</div>
@@ -308,8 +290,8 @@
 				</div>
 			</section>
 			<section id="steps" class="container container_flex">
-				<h2>Book en konsultation til 0 kr.</h2>
-				<h1>PERSONLIG TRÆNER</h1>
+				<h2>Have a question?</h2>
+				<h1>Just ask us!</h1>
 					<div class="btn btn_round btn_center">
 						Contact us
 					</div>
@@ -334,17 +316,17 @@
 						<form class="" action="index.html" method="post">
 							<div class="row">
 							<div class="form-group col">
-								<label for="name">Name</label>
-								<input type="text" name="name" class="form__input form__input_on-footer">
+								<label for="name"></label>
+								<input type="text" placeholder="Name" name="name" class="form__input form__input_on-footer">
 							</div>
 							<div class="form-group col">
-								<label for="email">E-mail</label>
-								<input type="text" name="email" class="form__input form__input_on-footer">
+								<label for="email"></label>
+								<input type="text" placeholder="Email" name="email" class="form__input form__input_on-footer">
 							</div>
 							</div>
 							<div class="form-group">
-								<label for="content">Content</label>
-								<textarea name="content" rows="2" cols="80" class="form__input form__input_on-footer"></textarea>
+								<label for="content"></label>
+								<textarea name="content" placeholder="Content" rows="2" cols="80" class="form__input form__input_on-footer"></textarea>
 							</div>
 							<div class="form-group">
 								<button class="btn btn_round" type="submit" style="border: 0; outline: 0;">
@@ -355,8 +337,8 @@
 					</div>
 					<div class="col contact-info">
 						<h1>Adres</h1>
-						<p>XX-XXX Wrocław</p>
-						<p>ul. Papiesza 2137</p>
+						<p>(48) 699 699 699</p>
+						<p>ul. Ulica, 55-555 Wrocław</p>
 						<h2>Godziny otwarcia</h2>
 						<p>Poniedziałek - Piątek: <i>12:00 - 24:00</i></p>
 						<p>Sobota - Niedziela: <i>14:00 - 2:00</i></p>
